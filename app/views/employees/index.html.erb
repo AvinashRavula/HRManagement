@@ -1,0 +1,11 @@
+<%= link_to 'Add Employee', new_employee_path %>
+<% @employees.each do |employee| %> 
+    <div class="message" style="margin:10px;background-color:#d9d9ec;color:white;padding:10px"> 
+        <p class="content">
+            <b><%= link_to employee.name.titleize, employee_path(employee) %></b>
+        </p>
+        <p>
+            <%= link_to "Delete", employee, method: :delete, data: {confirm: "You sure?"} %>
+        </p>
+    </div> 
+<% end %>

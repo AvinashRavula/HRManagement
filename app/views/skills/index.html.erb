@@ -1,0 +1,9 @@
+<h1>Skills</h1>
+<%= link_to 'Add Skill', new_skill_path %>
+<% @skills.each do |skill| %> 
+    <div class="message" style="margin:10px;background-color:#d9d9ec;color:white;padding:10px"> 
+        <p class="content">
+            <b><%= link_to skill.title.titleize, skill_path(skill) %></b>
+        </p>
+    </div> 
+<% end %>

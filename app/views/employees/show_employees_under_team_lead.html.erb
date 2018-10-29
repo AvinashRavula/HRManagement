@@ -1,0 +1,13 @@
+<h1>Employees under Team Lead</h1>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Skills</th>
+    </tr>
+<% @employees.each do |employee| %>
+    <tr>
+        <td><%= employee["name"] %></td>
+        <td><%= employee["skills_count"] %></td>
+    </tr>
+<% end %>
+</table> 

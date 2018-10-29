@@ -1,0 +1,9 @@
+<h1>Projects</h1>
+<%= link_to 'Add Project', new_project_path %>
+<% @projects.each do |project| %> 
+    <div class="message" style="margin:10px;background-color:#d9d9ec;color:white;padding:10px"> 
+        <p class="content">
+            <b><%= link_to project.title.titleize, project_path(project) %></b>
+        </p>
+    </div> 
+<% end %>

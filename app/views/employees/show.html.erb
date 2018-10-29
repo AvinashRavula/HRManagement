@@ -1,0 +1,16 @@
+<%= link_to "Edit", edit_employee_path %>
+<p class="content">
+    Name :<b> <%= @employee.name.titleize %></b>
+</p> 
+<p class="content">
+    Designation :<b> <%= @employee.designation.titleize %></b>
+</p> 
+<p class="content">
+    Age : <b><%= @employee.age %></b>
+</p> 
+<p class="content">
+    Date of Joining : <b><%= @employee.date_of_joining %></b>
+</p> 
+<p class="time">
+    Created At : <b><%= @employee.created_at %></b>
+</p>
